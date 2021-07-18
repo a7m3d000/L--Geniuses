@@ -1,0 +1,150 @@
+// Variables
+$cardsName: steve bill elon;
+
+// Place holders
+%selection {
+    &::selection {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+// Mixins
+@mixin cardsStyle {
+    @each $card in $cardsName {
+        .#{$card} {
+            overflow: hidden;
+            border-radius: 15px;
+            position: relative;
+    
+            .name {
+                position: absolute;
+                height: 100%;
+                width: 70px;
+                background-color: rgba(0, 0, 0, 0.9);
+                right: -210px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+                .f-name,
+                .l-name {
+                    text-transform: uppercase;
+                    height: 14%;
+                    line-height: 40px;
+                    font-size: 11px;
+                }
+            }
+    
+            img {
+                max-width: 100%;
+                border-radius: 15px;
+            }
+    
+            &:hover {
+                transform: scale(1.05);
+                transition: all 0.5s;
+                cursor: pointer;
+
+                .name {
+                    right: 0;
+                    z-index: 1;
+                    transition: 0.5s;
+                }
+                
+                img {
+                    transition: all 0.9s;
+                    transform: translateX(-50%) scale(2);
+                }
+            }
+        }
+    }
+}
+
+// Global
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;300;400&display=swap');
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    background-image: url("../images//background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+// Style
+.container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        color: #fff;
+        font-family: "Monoton";
+        font-size: 70px;
+        font-weight: 100;
+        letter-spacing: 10px;
+        margin-bottom: -20px;
+
+        @extend %selection;
+    }
+
+    p {
+        color: #fff;
+        font-family: "Saira";
+        font-size: 17px;
+        letter-spacing: 3px;
+        font-weight: lighter;
+        padding-bottom:  130px;
+
+        @extend %selection;
+    }
+
+    .sm-container {
+        @include cardsStyle;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        .name {
+            @extend %selection;
+        }
+
+        img {
+            @extend %selection;
+        }
+    }
+}
+
+// Media Queries
+@media (max-width: 425px) {
+    .container {
+        h1 {
+            font-size: 35px;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 10px;
+            line-height: normal;
+        }
+
+        .steve, 
+        .bill,
+        .elon {
+            &:hover {
+                transform: scale(1) !important;
+            }
+        }
+    }
+}

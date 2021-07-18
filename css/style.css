@@ -1,0 +1,253 @@
+.container h1::-moz-selection, .container p::-moz-selection, .container .sm-container .name::-moz-selection, .container .sm-container img::-moz-selection {
+  background-color: #fff;
+  color: #000;
+}
+
+.container h1::selection, .container p::selection, .container .sm-container .name::selection, .container .sm-container img::selection {
+  background-color: #fff;
+  color: #000;
+}
+
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Saira:wght@100;300;400&display=swap");
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  background-image: url("../images//background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container h1 {
+  color: #fff;
+  font-family: "Monoton";
+  font-size: 70px;
+  font-weight: 100;
+  letter-spacing: 10px;
+  margin-bottom: -20px;
+}
+.container p {
+  color: #fff;
+  font-family: "Saira";
+  font-size: 17px;
+  letter-spacing: 3px;
+  font-weight: lighter;
+  padding-bottom: 130px;
+}
+.container .sm-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+.container .sm-container .steve {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+.container .sm-container .steve .name {
+  position: absolute;
+  height: 100%;
+  width: 70px;
+  background-color: rgba(0, 0, 0, 0.9);
+  right: -210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container .sm-container .steve .name .f-name,
+.container .sm-container .steve .name .l-name {
+  text-transform: uppercase;
+  height: 14%;
+  line-height: 40px;
+  font-size: 11px;
+}
+.container .sm-container .steve img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+.container .sm-container .steve:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.container .sm-container .steve:hover .name {
+  right: 0;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.container .sm-container .steve:hover img {
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+  -webkit-transform: translateX(-50%) scale(2);
+          transform: translateX(-50%) scale(2);
+}
+.container .sm-container .bill {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+.container .sm-container .bill .name {
+  position: absolute;
+  height: 100%;
+  width: 70px;
+  background-color: rgba(0, 0, 0, 0.9);
+  right: -210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container .sm-container .bill .name .f-name,
+.container .sm-container .bill .name .l-name {
+  text-transform: uppercase;
+  height: 14%;
+  line-height: 40px;
+  font-size: 11px;
+}
+.container .sm-container .bill img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+.container .sm-container .bill:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.container .sm-container .bill:hover .name {
+  right: 0;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.container .sm-container .bill:hover img {
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+  -webkit-transform: translateX(-50%) scale(2);
+          transform: translateX(-50%) scale(2);
+}
+.container .sm-container .elon {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+.container .sm-container .elon .name {
+  position: absolute;
+  height: 100%;
+  width: 70px;
+  background-color: rgba(0, 0, 0, 0.9);
+  right: -210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container .sm-container .elon .name .f-name,
+.container .sm-container .elon .name .l-name {
+  text-transform: uppercase;
+  height: 14%;
+  line-height: 40px;
+  font-size: 11px;
+}
+.container .sm-container .elon img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+.container .sm-container .elon:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.container .sm-container .elon:hover .name {
+  right: 0;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.container .sm-container .elon:hover img {
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+  -webkit-transform: translateX(-50%) scale(2);
+          transform: translateX(-50%) scale(2);
+}
+
+@media (max-width: 425px) {
+  .container h1 {
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+  .container p {
+    font-size: 10px;
+    line-height: normal;
+  }
+  .container .steve:hover,
+  .container .bill:hover,
+  .container .elon:hover {
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
