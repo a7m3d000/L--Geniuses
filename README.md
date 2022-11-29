@@ -38,4 +38,4 @@ This is a [**Geniuses**](https://fylo-landing-p.vercel.app/) Website,Nice and Ve
 
 # Website Screenshot
 
-![Geniuses]()
+![Geniuses](https://github.com/ahmedmohmd/geniuses/blob/main/app-screenshot.png?raw=true)
